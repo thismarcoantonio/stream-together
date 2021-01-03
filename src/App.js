@@ -1,7 +1,8 @@
 import React from "react"
+import Login from "pages/Login"
 
 function App() {
-  return <h1>Stream Together</h1>
+  return <Login />
 }
 
 export default App
