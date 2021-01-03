@@ -9,7 +9,7 @@
     "no-unused-vars": "error",
     "prefer-const": "error",
     "no-var": "error",
-    "prettier/prettier": ["error", { "semi": false }],
+    "prettier/prettier": ["error", { "semi": false, "trailingComma": "none" }],
     "jsx-a11y/alt-text": "off",
     "jsx-a11y/no-autofocus": [2, { "ignoreNonDOM": true }],
     "react/function-component-definition": ["error", {
@@ -20,6 +20,14 @@
   "settings": {
     "react": {
       "version": "17.0.1"
+    },
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["pages", "./src/pages"],
+          ["common", "./src/common"]
+        ]
+      }
     }
   }
 }
