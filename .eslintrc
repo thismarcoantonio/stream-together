@@ -1,0 +1,25 @@
+{
+  "extends": ["react-app", "plugin:import/errors", "plugin:promise/recommended"],
+  "plugins": ["prettier", "import", "promise", "jsx-a11y"],
+  "rules": {
+    "react/jsx-uses-vars": "error",
+    "react/jsx-uses-react": "error",
+    "react/jsx-no-undef": "error",
+    "react/react-in-jsx-scope": "error",
+    "no-unused-vars": "error",
+    "prefer-const": "error",
+    "no-var": "error",
+    "prettier/prettier": ["error", { "semi": false }],
+    "jsx-a11y/alt-text": "off",
+    "jsx-a11y/no-autofocus": [2, { "ignoreNonDOM": true }],
+    "react/function-component-definition": ["error", {
+      "namedComponents": "function-declaration",
+      "unnamedComponents": "arrow-function"
+    }]
+  },
+  "settings": {
+    "react": {
+      "version": "17.0.1"
+    }
+  }
+}
